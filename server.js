@@ -3,9 +3,9 @@ const path = require('path')
 
 const app = express()
 
-app.use('/assets', express.static(path.join(__dirname, 'assets')))
+app.get('/assets', express.static(path.join(__dirname, 'assets')))
 
-app.use('/standard', (req, res) => {
+app.get('/standard', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'index.html'))
 })
 app.use('/amp', (req, res) => {
