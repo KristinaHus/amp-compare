@@ -11,6 +11,6 @@ app.get('/standard', (req, res) => {
 app.use('/amp', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'amp-index.html'))
 })
-let server = app.listen(3000, () => {
-  console.log('Server listening on port 3000')
+let server = app.listen(process.env.PORT || 5000, () => {
+  console.log('Server listening on port 5000')
 })

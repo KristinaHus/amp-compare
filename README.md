@@ -7,6 +7,6 @@ To start the server you have to run
 
 and two pages will be available for you at the next routes:
 
-    localhost:3000/standard - regular page
+    localhost:<port>/standard - regular page
 
-    localhost:3000/amp - amp page
+    localhost:<port>/amp - amp page
