@@ -9,6 +9,5 @@ $(document).click((e) => {
 })
 $('a').click(function(e) {
   let target = $($(this).attr("href"))[0]
-  console.log(222222, target)
   $('body').scrollTo(target);
 })
